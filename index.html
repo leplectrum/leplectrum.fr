@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Le Plectrum — Bar • Restaurant • Jeux</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f1eb;
+    color: #222;
+}
+
+header {
+    background: #171717;
+    color: white;
+    text-align: center;
+    padding: 35px 20px 30px;
+    border-bottom: 5px solid #b88a44;
+}
+
+.logo {
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.subtitle {
+    margin-top: 8px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #d6d6d6;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px 15px 50px;
+}
+
+.intro {
+    text-align: center;
+    padding: 15px 10px 25px;
+}
+
+.intro h2 {
+    margin-bottom: 5px;
+}
+
+.intro p {
+    color: #666;
+}
+
+.section {
+    background: white;
+    margin-bottom: 18px;
+    padding: 20px;
+    border-left: 5px solid #b88a44;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    margin-top: 0;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-desc {
+    display: block;
+    font-size: 13px;
+    color: #777;
+    margin-top: 4px;
+}
+
+.price {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.games {
+    background: #171717;
+    color: white;
+    border-left-color: #b88a44;
+}
+
+.games .item {
+    border-bottom-color: #444;
+}
+
+.games .item-desc {
+    color: #bbb;
+}
+
+footer {
+    background: #171717;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer strong {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+footer p {
+    color: #bbb;
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    .section {
+        padding: 17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LE PLECTRUM</div>
+    <div class="subtitle">BAR • RESTAURANT • JEUX</div>
+</header>
+
+<div class="container">
+
+    <div class="intro">
+        <h2>Bienvenue au Plectrum 🎸</h2>
+        <p>À boire, à manger et surtout à partager.</p>
+    </div>
+
+    <div class="section">
+        <h2>🍽️ À manger</h2>
+
+        <div class="item">
+            <div>
+                <span class="item-name">Paninis</span>
+                <span class="item-desc">Découvrez nos différentes recettes</span>
+            </div>
+            <span class="price">—</span>
+        </div>
+
+        <div class="item">
+            <div>
+                <span class="item-name">Salades</span>
+                <span class="item-desc">Fraîches et généreuses</span>
+            </div>
+            <span class="price">—</span>
+        </div>
+
+        <div class="item">
+            <div>
+                <span class="item-name">Planches à partager</span>
+                <span class="item-desc">À partager entre amis</span>
+            </div>
+            <span class="price">—</span>
+        </div>
+
+        <div class="item">
+            <div>
+                <span class="item-name">Accompagnements</span>
+            </div>
+            <span class="price">—</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🥤 Boissons</h2>
+
+        <div class="item">
+            <div>
+                <span class="item-name">Softs</span>
+                <span class="item-desc">Boissons fraîches</span>
+            </div>
+            <span class="price">—</span>
+        </div>
+
+        <div class="item">
+            <div>
+                <span class="item-name">Cocktails sans alcool</span>
+                <span class="item-desc">À déguster sans modération</span>
+            </div>
+            <span class="price">—</span>
+        </div>
+
+        <div class="item">
+            <div>
+                <span class="item-name">Bières</span>
+            </div>
+            <span class="price">—</span>
+        </div>
+
+        <div class="item">
+            <div>
+                <span class="item-name">Boissons chaudes</span>
+            </div>
+            <span class="price">—</span>
+        </div>
+    </div>
+
+    <div class="section games">
+        <h2>🎯 Les jeux</h2>
+
+        <div class="item">
+            <div>
+                <span class="item-name">🎯 Fléchettes</span>
+                <span class="item-desc">1 € par joueur et par partie</span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>
+                <span class="item-name">🎲 Jeux de société</span>
+                <span class="item-desc">À jouer entre amis</span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>
+                <span class="item-name">🎸 Autres jeux</span>
+                <span class="item-desc">Découvrez les jeux disponibles au Plectrum</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📍 Le Plectrum</h2>
+
+        <div class="item">
+            <div>
+                <span class="item-name">Horaires</span>
+                <span class="item-desc">Retrouvez nos horaires d'ouverture</span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>
+                <span class="item-name">Adresse</span>
+                <span class="item-desc">Rumilly — Haute-Savoie</span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div>
+                <span class="item-name">Contact & réservation</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <strong>LE PLECTRUM</strong>
+    <p>Bar • Restaurant • Jeux • Musique</p>
+</footer>
+
+</body>
+</html>
