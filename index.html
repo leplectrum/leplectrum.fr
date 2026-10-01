@@ -53,8 +53,6 @@ body {
     overflow: hidden;
 }
 
-/* Cercles décoratifs */
-
 .hero::before {
     content: "";
     position: absolute;
@@ -248,6 +246,94 @@ body {
 }
 
 /* =========================
+   BLOC JEUX
+========================= */
+
+.games-section {
+    padding: 10px 16px 60px;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.games-title {
+    text-align: center;
+
+    font-size: 25px;
+
+    letter-spacing: 2px;
+
+    margin: 0 0 10px;
+}
+
+.games-intro {
+    text-align: center;
+
+    color: #666666;
+
+    line-height: 1.5;
+
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+}
+
+.games-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+.game-card {
+    background: #ffffff;
+
+    border-radius: 5px;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+
+    border-top: 4px solid #ef6864;
+}
+
+.game-icon {
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.game-card strong {
+    display: block;
+
+    font-size: 17px;
+
+    margin-bottom: 6px;
+}
+
+.game-card span {
+    color: #777777;
+
+    font-size: 14px;
+}
+
+.games-footer {
+    text-align: center;
+
+    margin-top: 30px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    color: #333333;
+}
+
+/* =========================
    FOOTER
 ========================= */
 
@@ -289,6 +375,10 @@ footer strong {
         padding: 17px 15px;
     }
 
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 </style>
@@ -304,18 +394,15 @@ footer strong {
 
 <section class="hero">
 
-    <!-- TON LOGO -->
     <img
         src="logo-plectrum.png"
         alt="Le Plectrum"
         class="logo"
     >
 
-
     <div class="kicker">
         BAR • RESTAURANT • JEUX
     </div>
-
 
     <p class="tagline">
 
@@ -330,7 +417,6 @@ footer strong {
 
     </p>
 
-
     <div class="buttons">
 
         <a
@@ -340,14 +426,12 @@ footer strong {
             🍽️ VOIR LA CARTE
         </a>
 
-
         <a
             class="btn btn-secondary"
             href="#jeux"
         >
             🎯 DÉCOUVRIR LES JEUX
         </a>
-
 
         <a
             class="btn btn-secondary"
@@ -358,13 +442,11 @@ footer strong {
 
     </div>
 
-
     <div class="note">
         Rumilly • Haute-Savoie
     </div>
 
 </section>
-
 
 
 <!-- =========================
@@ -380,9 +462,7 @@ footer strong {
         AU PLECTRUM
     </h2>
 
-
     <div class="cards">
-
 
         <div class="card">
 
@@ -399,24 +479,19 @@ footer strong {
         </div>
 
 
-
-        <div
-            class="card"
-            id="jeux"
-        >
+        <div class="card">
 
             <strong>
                 🎯 Les jeux
             </strong>
 
             <p>
-                Fléchettes, jeux de société
-                et autres jeux à découvrir
-                entre amis.
+                Fléchettes, billards,
+                baby-foot, air hockey
+                et basketball.
             </p>
 
         </div>
-
 
 
         <div
@@ -436,11 +511,132 @@ footer strong {
 
         </div>
 
-
     </div>
 
 </section>
 
+
+<!-- =========================
+     LES JEUX
+========================= -->
+
+<section
+    class="games-section"
+    id="jeux"
+>
+
+    <h2 class="games-title">
+        🎯 DÉCOUVREZ NOS JEUX
+    </h2>
+
+    <p class="games-intro">
+        Au Plectrum, on ne vient pas seulement boire un verre…
+        on vient aussi jouer !
+    </p>
+
+
+    <div class="games-grid">
+
+
+        <div class="game-card">
+
+            <div class="game-icon">
+                🎯
+            </div>
+
+            <strong>
+                Fléchettes
+            </strong>
+
+            <span>
+                2 jeux de fléchettes
+            </span>
+
+        </div>
+
+
+        <div class="game-card">
+
+            <div class="game-icon">
+                🎱
+            </div>
+
+            <strong>
+                Billard
+            </strong>
+
+            <span>
+                2 billards
+            </span>
+
+        </div>
+
+
+        <div class="game-card">
+
+            <div class="game-icon">
+                ⚽
+            </div>
+
+            <strong>
+                Baby-foot
+            </strong>
+
+            <span>
+                1 baby-foot
+            </span>
+
+        </div>
+
+
+        <div class="game-card">
+
+            <div class="game-icon">
+                🏒
+            </div>
+
+            <strong>
+                Air Hockey
+            </strong>
+
+            <span>
+                1 table d'air hockey
+            </span>
+
+        </div>
+
+
+        <div class="game-card">
+
+            <div class="game-icon">
+                🏀
+            </div>
+
+            <strong>
+                Basketball
+            </strong>
+
+            <span>
+                1 jeu de basketball
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="games-footer">
+
+        🎵 JOUE • BOIS • MANGE • PROFITE
+
+        <br><br>
+
+        Le Plectrum, c'est aussi ça !
+
+    </div>
+
+</section>
 
 
 <!-- =========================
