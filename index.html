@@ -301,6 +301,32 @@ body {
     border-top: 4px solid #ef6864;
 }
 
+/* CARTE FLECHETTES */
+
+.game-card-darts {
+    grid-column: 1 / -1;
+
+    padding: 0;
+
+    overflow: hidden;
+}
+
+.game-photo {
+    display: block;
+
+    width: 100%;
+
+    max-height: 620px;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+.game-photo-caption {
+    padding: 20px 15px 22px;
+}
+
 .game-icon {
     font-size: 42px;
 
@@ -379,6 +405,14 @@ footer strong {
         grid-template-columns: 1fr;
     }
 
+    .game-card-darts {
+        grid-column: auto;
+    }
+
+    .game-photo {
+        max-height: 520px;
+    }
+
 }
 
 </style>
@@ -405,11 +439,6 @@ footer strong {
     </div>
 
     <p class="tagline">
-
-        À boire, à manger,
-        de la musique et des jeux.
-
-        <br>
 
         <strong>
             Bienvenue au Plectrum.
@@ -538,22 +567,36 @@ footer strong {
     <div class="games-grid">
 
 
-        <div class="game-card">
+        <!-- FLECHETTES AVEC PHOTO -->
 
-            <div class="game-icon">
-                🎯
+        <div class="game-card game-card-darts">
+
+            <img
+                class="game-photo"
+                src="plectrum-flechettes-site.jpg"
+                alt="Deux jeux de fléchettes électroniques au Plectrum"
+            >
+
+            <div class="game-photo-caption">
+
+                <div class="game-icon">
+                    🎯
+                </div>
+
+                <strong>
+                    Fléchettes
+                </strong>
+
+                <span>
+                    2 jeux de fléchettes
+                </span>
+
             </div>
-
-            <strong>
-                Fléchettes
-            </strong>
-
-            <span>
-                2 jeux de fléchettes
-            </span>
 
         </div>
 
+
+        <!-- BILLARD -->
 
         <div class="game-card">
 
@@ -572,6 +615,8 @@ footer strong {
         </div>
 
 
+        <!-- BABY FOOT -->
+
         <div class="game-card">
 
             <div class="game-icon">
@@ -589,6 +634,8 @@ footer strong {
         </div>
 
 
+        <!-- AIR HOCKEY -->
+
         <div class="game-card">
 
             <div class="game-icon">
@@ -605,6 +652,8 @@ footer strong {
 
         </div>
 
+
+        <!-- BASKETBALL -->
 
         <div class="game-card">
 
