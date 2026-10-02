@@ -134,6 +134,48 @@ body {
     font-size: 14px;
     line-height: 1.5;
 }
+
+.cocktails-section {
+    padding: 10px 16px 60px;
+    max-width: 1000px;
+    margin: auto;
+}
+.cocktails-title {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin: 0 0 10px;
+}
+.cocktails-intro {
+    text-align: center;
+    color: #666666;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+.cocktails-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+.cocktail-card {
+    background: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+.cocktail-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.cocktail-name {
+    padding: 14px 15px 16px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
 .games-section {
     padding: 10px 16px 60px;
     max-width: 900px;
@@ -217,6 +259,7 @@ footer strong {
     .tagline { font-size: 16px; }
     .btn { padding: 17px 15px; }
     .games-grid { grid-template-columns: 1fr; }
+    .cocktails-grid { grid-template-columns: 1fr; }
     .game-card-darts { grid-column: auto; }
     .game-photo { max-height: 520px; }
 }
@@ -244,7 +287,7 @@ footer strong {
             🍽️ VOIR LA CARTE
         </a>
 
-        <a class="btn btn-secondary" href="carte-mobile.html#cocktails">
+        <a class="btn btn-secondary" href="#cocktails">
             🍹 DÉCOUVRIR NOS COCKTAILS
         </a>
 
@@ -299,6 +342,43 @@ footer strong {
                 les horaires, l'adresse
                 et les informations de contact.
             </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="cocktails-section" id="cocktails">
+
+    <h2 class="cocktails-title">
+        🍹 NOS COCKTAILS
+    </h2>
+
+    <p class="cocktails-intro">
+        Découvrez quelques-uns de nos cocktails maison.
+    </p>
+
+    <div class="cocktails-grid">
+
+        <div class="cocktail-card">
+            <img src="cocktail-provencal.png" alt="Cocktail Provençal">
+            <div class="cocktail-name">🍹 Provençal</div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="cocktail-pina-colada.png" alt="Piña Colada">
+            <div class="cocktail-name">🍍 Piña Colada</div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="cocktail-mojito.png" alt="Mojito">
+            <div class="cocktail-name">🌿 Mojito</div>
+        </div>
+
+        <div class="cocktail-card">
+            <img src="cocktail-mojito-fraise.png" alt="Mojito Fraise">
+            <div class="cocktail-name">🍓 Mojito Fraise</div>
         </div>
 
     </div>
