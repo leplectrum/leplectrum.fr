@@ -273,7 +273,9 @@ footer strong {
 .menu-number{color:#ef6864;font-weight:bold;font-size:13px;letter-spacing:2px;padding:15px 15px 0}
 .menu-page h3{margin:4px 15px 15px;font-size:19px}
 .menu-page img{display:block;width:100%;height:auto}
-@media(max-width:600px){.menu-mobile{padding:28px 7px 45px}.menu-page{border-radius:5px;margin-bottom:18px}.menu-page h3{font-size:18px}}
+@media(max-width:600px){.cocktails-grid{grid-template-columns:1fr}.menu-mobile{padding:28px 7px 45px}.menu-page{border-radius:5px;margin-bottom:18px}.menu-page h3{font-size:18px}}
+
+.cocktails-section{padding:10px 16px 60px;max-width:1000px;margin:auto}.cocktails-title{text-align:center;font-size:25px;letter-spacing:2px;margin:0 0 10px}.cocktails-intro{text-align:center;color:#666;line-height:1.5;margin:0 auto 30px}.cocktails-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.cocktail-card{background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,.08)}.cocktail-card img{display:block;width:100%;height:auto}.cocktail-name{padding:14px 15px 16px;text-align:center;font-weight:bold;letter-spacing:1px}
 </style>
 </head>
 <body>
@@ -290,7 +292,7 @@ footer strong {
 
 
 
-<a class="btn btn-primary" href="#carte-menu">🍽️ VOIR LA CARTE</a><a class="btn btn-secondary" href="#plats">🍔 DÉCOUVRIR NOS PLATS</a><a class="btn btn-secondary" href="#jeux">🎯 NOS JEUX</a><a class="btn btn-secondary" href="#contact">📍 NOUS TROUVER</a></div>
+<a class="btn btn-primary" href="#carte-menu">🍽️ VOIR LA CARTE</a><a class="btn btn-secondary" href="#cocktails">🍹 DÉCOUVRIR NOS COCKTAILS</a><a class="btn btn-secondary" href="#plats">🍔 DÉCOUVRIR NOS PLATS</a><a class="btn btn-secondary" href="#jeux">🎯 NOS JEUX</a><a class="btn btn-secondary" href="#contact">📍 NOUS TROUVER</a></div>
 <div class="note">
         Rumilly • Haute-Savoie
     </div>
@@ -331,7 +333,18 @@ footer strong {
 <div class="menu-page"><div class="menu-number">02</div><h3>Les Cocktails</h3><img alt="Carte Le Plectrum — page 2" loading="lazy" src="02-cocktails.jpg"/></div>
 <div class="menu-page"><div class="menu-number">03</div><h3>Les Tapas &amp; Plats</h3><img alt="Carte Le Plectrum — page 3" loading="lazy" src="03-tapas.jpg"/></div>
 <div class="menu-page"><div class="menu-number">04</div><h3>Les Desserts</h3><img alt="Carte Le Plectrum — page 4" loading="lazy" src="04-desserts.jpg"/></div>
-</section><section class="food-section" id="plats">
+</section><section class="cocktails-section" id="cocktails">
+<h2 class="cocktails-title">🍹 NOS COCKTAILS</h2>
+<p class="cocktails-intro">Découvrez quelques-uns de nos cocktails.</p>
+<div class="cocktails-grid">
+<div class="cocktail-card"><img src="cocktail-provencal.png" alt="Cocktail Provençal"><div class="cocktail-name">🍹 Provençal</div></div>
+<div class="cocktail-card"><img src="cocktail-pina-colada.png" alt="Piña Colada"><div class="cocktail-name">🍍 Piña Colada</div></div>
+<div class="cocktail-card"><img src="cocktail-mojito.png" alt="Mojito"><div class="cocktail-name">🌿 Mojito</div></div>
+<div class="cocktail-card"><img src="cocktail-mojito-fraise.png" alt="Mojito Fraise"><div class="cocktail-name">🍓 Mojito Fraise</div></div>
+</div>
+</section>
+
+<section class="food-section" id="plats">
 <h2 class="food-title">🍽️ NOS PLATS</h2>
 <div class="food-grid">
 <div class="food-card">
